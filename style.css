@@ -4,6 +4,12 @@ html,body{
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url('./assets/fonts/Satoshi-Regular.ttf');
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -29,7 +35,6 @@ html,body{
   .container{
     max-width: 370px;
     margin: 0 auto;
-    border: 2px solid black;
   }
 
 
@@ -65,13 +70,48 @@ html,body{
 
 /* SECTION-TWO STYLING */
 
-.section-two{
+.section-two,
+.sub-one-two{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 1em auto 1em auto;
+    font-family: Satoshi-Regular;
+}
+
+.sub-one-two > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+}
+
+.sub-one-two > h2{
+    font-family: Satoshi-Regular;
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.sub-one-two > button{
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    font-family: Satoshi-Regular;
+    padding: 0.875em 1.875rem;
+    letter-spacing: .5px;
+    text-transform: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 1.1em;
+    transition: all .3s;
+    color: #f9f9fa;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-bottom: 1.5em;
 }
 
 
@@ -90,7 +130,8 @@ html,body{
 
 
 /* SECTION-THREE STYLING */
-.section-three{
+.section-three,
+.sub-one-three{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +146,57 @@ html,body{
     background: #D9D9D9;
 }
 
+.sub-one-three{
+    margin-top: 0.5em;
+}
+
+.sub-one-three > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    width: 90%;
+    margin-top: 0;
+}
+
+.sub-one-three > h2{
+    font-family: Satoshi-Regular;
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto 1em;
+    margin-bottom: 0;
+}
+
+.sub-two-three > h3{
+    font-family: Satoshi-Regular;
+    font-weight: 500;
+    color: #c4914f;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sub-two-three-one > h2{
+    font-family: Satoshi-Regular;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.sub-two-three-one > h3{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.sub-section-three{
+    padding-bottom: 3em;
+}
 
 /* SECTION-FOUR STYLING*/
 
@@ -116,7 +208,32 @@ html,body{
     text-align: center;
     margin: 1em auto 1em auto;
     background-color: #000;
-    padding-bottom: 6em;
+    padding-bottom: 8em;
+    position: relative;
+    top: -17em;
+    z-index: -10;
+    color: #fff;
+    padding-top: 17em;
+}
+
+.section-four > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+}
+
+.sub-section-four > h2{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.cards{
+    margin-top: -5.5em;
+    padding-bottom: 3em;
 }
 
 
@@ -125,46 +242,98 @@ html,body{
     height: 323px;
     background: #BC7373;
     position: relative;
-    margin-top: 6em;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sub-card-one{
-    width: 266px;
-    height: 184px;
     background: #D9D9D9;
     position: absolute;
-    bottom: -3em;
-    left: 2em;
+    bottom: -6em;
+    width: 90%;
 }
 
+.sub-card-one > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    color: #000;
+}
+
+.sub-card-one > h2{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
 
 /* SECTION-FIVE STYLING */
 
 .section-five{
+    position: relative;
+    top: -17em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 1em auto 1em auto;
+    padding: 1em;
 }
 
 .section-five > h3{
     width: 300px;
     margin: 0 auto;
     text-align: center;
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #000;
 }
 
+.b--one{
+    color: #c4914f;
+}
+
+.sub-one-five > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    color: #000;
+}
+
+.sub-one-five-sub{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #818181;
+    text-align: center;
+}
 
 .pic-one-five{
     width: 323px;
-    height: 314px;
+    height: 374px;
     background-color:#555 ;
-    margin: 1em auto;
+    margin: 2.5em auto -13em;
 }
 
 
 /* CAROUSEL STYLING */
+.section-six{
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+
+.ruler{
+    width: 94%;
+}
 
 .carousel{
     display: flex;
@@ -173,20 +342,35 @@ html,body{
     justify-content: center;
     text-align: center;
     margin: 1em auto 1em auto;
-    background-color: #000;
     color: #fff;
+}
+
+.carousel > h1{
+    font-size: 1.625rem;
+    width: 90%;
+    font-family: Satoshi-Regular;
+    font-weight: 500;
 }
 
 .review{
     display: flex;
+    width: 90%;
     justify-content: space-around;
     align-items: start;
 }
 
+.review > h2{
+    font-size: 1.25rem;
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    color: #c4914f;
+}
+
 .review-pic{
-    width: 100px;
+    width: 27%;
     height: 88px;
     background: #D9D9D9;
+    margin-bottom: 1.5em;
 }
 
 
@@ -197,4 +381,71 @@ html,body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 2em;
+}
+
+.sub-location > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    color: #000;
+}
+
+.sub-location,
+.sub-location-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pic-one-location{
+    width: 90%;
+    height: 326px;
+    background: #D9D9D9;
+}
+
+.sub-location-two > h2{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    color: #C4914F;
+    width: 90%;
+}
+
+.sub-location-two > h3{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #818181;
+    text-align: center;
+    width: 85%;
+    margin-top: 0;
+}
+
+.pic-two-location{
+    width: 85%;
+    height: 350px;
+    background: #D9D9D9;
+}
+
+
+.sub-location-two > button{
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    font-family: Satoshi-Regular;
+    padding: 0.875em 1.875rem;
+    letter-spacing: .5px;
+    text-transform: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 1.1em;
+    transition: all .3s;
+    color: #f9f9fa;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
 }
