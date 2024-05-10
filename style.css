@@ -65,6 +65,7 @@ html,body{
     width: 100%;
     background-color: #121213;
     color: #fff;
+    height: 90px;
 }
 
 .header > h1{
@@ -327,7 +328,7 @@ html,body{
     padding-top: 17em;
 }
 
-.section-four > h1{
+.fourth-section > h1{
     font-family: Satoshi-Regular;
     font-weight: 800;
     font-size: 2.125rem;
@@ -662,4 +663,670 @@ html,body{
     font-size: 0.65rem;
     color: #555;
     font-family: Satoshi-Regular;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:424px) {
+    .container{
+        max-width: 425px;
+    }
+}
+
+
+@media (min-width:766px) {
+    .container{
+        max-width: 600px;
+    }
+}
+
+
+@media (min-width:1023px) {
+    .container{
+       max-width: 1024px;
+    }
+
+    /* SECTION-ONE STYLING*/
+
+    .sub--one > h1{
+        font-size: 1.25rem;
+    }
+
+    .section-one > h1{
+        font-size: 8rem;
+        margin: 0.2em;
+        position: relative;
+        z-index: 5;
+    }
+
+    .section-one > h2{
+        font-family: Neue Regular;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin: 1.5em auto;
+    }
+
+    .video--one{
+        width: 70%;
+        height: 700px;
+        margin-top: -4.95em;
+    }
+
+    .rec > h2{
+        font-size: 1.25rem;
+    }
+
+    .rec-gif{
+        height: 30px;
+        width: 30px;
+    }
+
+    /* SECTION-TWO STYLING */
+    .section-two{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        padding: 2em;
+    }
+
+    .sub-one-two{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        margin: 0 auto 1em 2.5em;
+        line-height: 1.5;
+        font-family: Satoshi-Regular;
+    }
+
+    .sub-one-two > h1{
+        font-family: Satoshi-Regular;
+        font-weight: 800;
+        font-size: 3rem;
+        margin-top: 0.2em;
+        margin-bottom: 0;
+    }
+
+    .sub-one-two > h2{
+        font-family: Satoshi-Regular;
+        color: #818181;
+        font-weight: 400;
+        font-size: 1rem;
+        width: 90%;
+        margin: 1em 0 2em 0;
+        padding: 0;
+    }
+
+    .sub-one-two > button{
+        font-size: 1rem;
+        background-color: #000;
+        color: #fff;
+        font-family: Satoshi-Regular;
+        padding: 0.875em 1.875rem;
+        letter-spacing: .5px;
+        text-transform: none;
+        border-radius: 25px;
+        font-size: 16px;
+        line-height: 1.1em;
+        transition: all .3s;
+        color: #f9f9fa;
+        border: 1px solid #000;
+        cursor: pointer;
+        margin-bottom: 2.5em;
+    }
+
+
+    .pic-one{
+        margin-top: 1em;
+        width: 60%;
+        height: 500px;
+        background: #D9D9D9;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+    }
+
+    .pic-two{
+        width: 85%;
+        height: 300px;
+        background: #D9D9D9;
+    }
+
+    
+/* SECTION-THREE STYLING */
+.section-three,
+.sub-one-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 1em auto 1em auto;
+}
+
+
+.video-two{
+    width: 94%;
+    height: 450px;
+    background: #D9D9D9;
+}
+
+.sub-one-three{
+    margin-top: 0.5em;
+    width: 60%;
+}
+
+.sub-one-three > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 3rem;
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+
+.sub-one-three > h2{
+    font-family: Satoshi-Regular;
+    color: #818181;
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 90%;
+    margin: 0 auto 1em;
+    margin-bottom: 0;
+}
+
+.sub-two-three{
+    display: flex;
+    align-items: center;
+
+}
+
+.sub-two-three > h3{
+    font-family: Satoshi-Regular;
+    font-weight: 500;
+    color: #c4914f;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sub-two-three-one{
+    text-align: center;
+}
+
+.sub-two-three-one > h2{
+    font-family: Satoshi-Regular;
+    font-weight: 200;
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+.sub-two-three-one > h3{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.sub-section-three{
+    padding-bottom: 3em;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+
+/* SECTION-FOUR STYLING*/
+
+.section-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto 1em auto;
+    background-color: #000;
+    padding-bottom: 8em;
+    position: relative;
+    top: -17em;
+    z-index: -10;
+    color: #fff;
+    line-height: 1.7;
+    padding-top: 17em;
+}
+
+.fourth-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 1.75em;
+    text-align: start;
+}
+
+.fourth-section > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.sub-section-four{
+    width: 50%;
+}
+
+.sub-section-four > h2{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+.cards{
+    margin-top: -5.5em;
+    padding-bottom: 3em;
+    display: flex;
+}
+
+
+.card-one{
+    width: 320px;
+    height: 323px;
+    background: #BC7373;
+    position: relative;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+}
+
+
+
+.sub-card-one{
+    background: #D9D9D9;
+    position: absolute;
+    bottom: -6em;
+    width: 90%;
+}
+
+.sub-card-one > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 2.125rem;
+    color: #000;
+}
+
+.sub-card-one > h2{
+    color: #818181;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+/* SECTION-FIVE STYLING */
+
+.section-five{
+    position: relative;
+    top: -17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+}
+
+.section-five > h3{
+    width: 300px;
+    margin: 0 auto;
+    text-align: start;
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #000;
+    margin-left: 1.75em;
+    width: 70%;
+}
+
+.b--one{
+    color: #c4914f;
+    font-size: 4rem;
+}
+
+.sub-one-five{
+    display: flex;
+}
+
+.sub-one-five > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+    width: 50%;
+}
+
+.sub-one-five-sub{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #818181;
+    text-align: center;
+}
+
+.pic-one-five{
+    width: 80%;
+    height: 450px;
+    background-color:#555 ;
+    margin: 3em auto -13em;
+}
+
+/* CAROUSEL STYLING */
+.section-six{
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+
+.ruler{
+    width: 94%;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 1em auto 1em auto;
+    color: #fff;
+}
+
+.carousel > h1{
+    font-size: 2.125rem;
+    width: 90%;
+    font-family: Satoshi-Regular;
+    font-weight: 500;
+}
+
+.review{
+    display: flex;
+    width: 90%;
+    justify-content: start;
+    align-items: start;
+    margin-left: 3em;
+}
+
+.review > h2{
+    font-size: 1.375rem;
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    color: #c4914f;
+}
+
+.review-pic{
+    width: 75px;
+    height: 75px;
+    background: #D9D9D9;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+}
+
+
+/* LOCATION STYLING */
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.sub-location > h1{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+}
+
+.sub-location,
+.sub-location-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sub-location-two{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    margin-left: 2em;
+}
+
+.pic-one-location{
+    width: 90%;
+    height: 500px;
+    background: #D9D9D9;
+}
+
+.sub-location-two > h2{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #C4914F;
+    width: 90%;
+    margin-top: 0;
+}
+
+.sub-location-two > h3{
+    font-family: Satoshi-Regular;
+    font-weight: 800;
+    font-size: 1.125rem;
+    color: #818181;
+    text-align: start;
+    width: 85%;
+    margin-top: 0;
+}
+
+.pic-two-location{
+    width: 85%;
+    height: 450px;
+    background: #D9D9D9;
+}
+
+
+.sub-location-two > button{
+    font-size: 1.25rem;
+    background-color: #000;
+    color: #fff;
+    font-family: Satoshi-Regular;
+    padding: 0.875em 1.875rem;
+    letter-spacing: .5px;
+    text-transform: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 1.1em;
+    transition: all .3s;
+    color: #f9f9fa;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 0.5em;
+    margin-bottom: 3.5em;
+}
+
+/* FOOTER STYLING */
+
+.footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 2.25em;
+}
+
+.footer-one,
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-one{
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.sub--footer--one{
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    width: 85%;
+    margin-top: 1em;
+    height: 200px;
+}
+
+.sub--footer--one > h1{
+    font-family: Satoshi-Light;
+    font-weight: 100;
+}
+
+.sub--footer--one > h2{
+    font-size: 1rem;
+    font-family: Satoshi-Light;
+    color: #818181;
+}
+
+.sub--footer--two{
+    width: 85%;
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    height: 200px;
+}
+
+.sub--footer--two > ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: Satoshi-Light;
+    color: #818181;
+    line-height: 1.8;
+}
+
+.sub--footer--two > ul > li{
+    list-style: none;
+    margin: 0;
+}
+
+.sub--footer--three > h1{
+    font-size: 1.25rem;
+    font-family: Satoshi-Regular;
+    font-weight: 200;
+}
+
+
+.sub--footer--three{
+    width: 85%;
+    border-bottom: none;
+}
+
+.horses--box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.sultan{
+    width: 35%;
+    height: 100px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.footer > h1{
+    font-size: 1rem;
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer > h2{
+    font-size: 0.65rem;
+    color: #555;
+    font-family: Satoshi-Regular;
+}
+
+}
+
+@media (min-width:1260px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .section-two,
+    .section-three,
+    .section-five,
+    .location{
+        max-width: 1024px;
+        margin: 0 auto
+    }
+
+    .video-two{
+        width: 100%;
+    }
+
+
+    .location{
+        margin-top: 2em;
+    }
+
+    .sub--footer--one{
+        text-align: start;
+    }
+
+    .section-six{
+        margin-bottom: 4em;
+    }
+
+    .footer-one{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        max-width: 1260px;
+        margin: 0 0 0 0;
+        border: none;
+        border-bottom: 2px solid #fff;
+        
+    }
+
+    
+    .video--one{
+        width: 70%;
+        height: 900px;
+        margin-top: -4.95em;
+    }
+
+
 }
