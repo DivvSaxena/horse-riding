@@ -33,6 +33,7 @@ html,body{
   .container{
     max-width: 375px;
     margin: 0 auto;
+    overflow-y: hidden;
   }
 
 /* HEADER STYLING */
@@ -820,7 +821,7 @@ html,body{
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
-    
+
     .container{
        max-width: 1024px;
     }
