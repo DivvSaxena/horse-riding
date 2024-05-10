@@ -66,6 +66,7 @@ html,body{
     background-color: #121213;
     color: #fff;
     height: 90px;
+    box-shadow: 1px 1px 20px  rgb(36, 19, 54);
 }
 
 .header > h1{
@@ -102,6 +103,49 @@ html,body{
     opacity: 79%;
     border-radius: .5em;
 }
+
+
+.hamburger-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Satoshi-Light;
+    align-items: center;
+    box-shadow: 1px 1px 10px #232323;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    background-color: #121212;
+    margin-top: 7em;
+    color: #fff;
+    margin-bottom: -7.4em;
+}
+
+
+.hamburger-list > li{
+    font-size: 1.5rem;
+    padding: 1.25em;
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger-list > li:first-child{
+    font-size: 1.5rem;
+    padding: 1.25em;
+    position: relative;
+    z-index: 10;
+    margin-top: 2em;
+}
+
+.left , .right{
+    display: none;
+}
+
 
 /* SECTION-ONE STYLING*/
 
@@ -226,18 +270,25 @@ html,body{
     margin-bottom: 1.5em;
 }
 
+.sub-one-two > button > a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .pic-one{
     margin-top: 1em;
     width: 333px;
     height: 242px;
-    background: #D9D9D9;
+    background: url('./assets/horse-one.jpg');
+    background-size: cover;
 }
 
 .pic-two{
     width: 333px;
     height: 242px;
-    background: #D9D9D9;
+    background: url('./assets/horse-two.jpg');
+    background-size: cover;
 }
 
 
@@ -255,7 +306,12 @@ html,body{
 .video-two{
     width: 316px;
     height: 450px;
-    background: #D9D9D9;
+}
+
+.video-two > video{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 .sub-one-three{
@@ -352,7 +408,33 @@ html,body{
 .card-one{
     width: 333px;
     height: 323px;
-    background: #BC7373;
+    background: url('./assets/horse-begineer.jpg');
+    background-size: cover;
+    position: relative;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-two{
+    background: url('./assets/kitty-party.jpg');
+    background-size: cover;
+    width: 333px;
+    height: 323px;
+    position: relative;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-three{
+    background: url('./assets/pre-wedding.jpg');
+    background-size: cover;
+    width: 333px;
+    height: 323px;
     position: relative;
     margin-top: 9em;
     display: flex;
@@ -365,6 +447,12 @@ html,body{
     position: absolute;
     bottom: -6em;
     width: 90%;
+    height: 260px;
+}
+
+
+.third-card{
+    margin-bottom: 0;
 }
 
 .sub-card-one > h1{
@@ -430,8 +518,10 @@ html,body{
 .pic-one-five{
     width: 323px;
     height: 374px;
-    background-color:#555 ;
+    background:url('./assets/forestcountry.jpg') ;
+    background-size: cover;
     margin: 2.5em auto -13em;
+    object-fit: cover;
 }
 
 
@@ -480,9 +570,11 @@ html,body{
 }
 
 .review-pic{
+    background: url('./assets/pics/pic-one.jpg');
+    background-size: cover;
+    background-position: center;
     width: 27%;
     height: 88px;
-    background: #D9D9D9;
     margin-bottom: 1.5em;
 }
 
@@ -514,9 +606,25 @@ html,body{
 }
 
 .pic-one-location{
+    border-radius: 1.25em;
+    border: 2px solid #232323;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
     width: 90%;
     height: 326px;
-    background: #D9D9D9;
+    margin-top: 0em;
+    overflow: hidden;
+}
+
+.pic-one-location > video{
+    min-width: 100%; 
+    min-height: 100%; 
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-30%,-30%);
 }
 
 .sub-location-two > h2{
@@ -540,7 +648,8 @@ html,body{
 .pic-two-location{
     width: 85%;
     height: 350px;
-    background: #D9D9D9;
+    background: url('./assets/logo.png');
+    background-size: cover;
 }
 
 
@@ -645,12 +754,38 @@ html,body{
     margin-bottom: 1.5em;
 }
 
+
 .sultan{
     width: 35%;
     height: 100px;
-    background: #D9D9D9;
+    background: url('./assets/horse-one.jpg');
+    background-size: cover;
     border-radius: 10px;
 }
+
+.sultan-two{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/horse-two.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sultan-three{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/horse-begineer.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+.sultan-four{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/forestcountry.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
 
 .footer > h1{
     font-size: 1rem;
@@ -685,6 +820,78 @@ html,body{
     .container{
        max-width: 1024px;
     }
+    /* HEADER STYLING */
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left , .right{
+        display: flex;
+    }
+
+    a{
+        cursor: pointer;
+    }
+    
+
+    .left{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        left: 5.5em;
+    }
+
+    .left > button{
+        font-size: 1rem;
+        color: #fff;
+        background: transparent;
+        font-family: Satoshi-Regular;
+        padding: 0.875em 1.875rem;
+        letter-spacing: .5px;
+        text-transform: none;
+        border-radius: 25px;
+        font-size: 16px;
+        line-height: 1.1em;
+        transition: all .3s;
+        color: #f9f9fa;
+        border: 1px solid #fff;
+        cursor: pointer;
+        margin-left: 1em;
+    }
+
+    .left > button > a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .header > h1{
+        position: relative;
+        left: 3.125em;
+        right: auto;
+    }
+
+    .right>ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        margin-right: 2em;
+        font-family: Satoshi-Light;
+    }
+
+    li{
+        margin-right: 1em;
+    }
+
+    .sub--header{
+        display: none;
+    }
+
+
 
     /* SECTION-ONE STYLING*/
 
@@ -781,7 +988,8 @@ html,body{
         margin-top: 1em;
         width: 60%;
         height: 500px;
-        background: #D9D9D9;
+        background: url('./assets/horse-one.jpg');
+        background-size: cover;
         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
     }
@@ -789,7 +997,8 @@ html,body{
     .pic-two{
         width: 85%;
         height: 300px;
-        background: #D9D9D9;
+        background: url('./assets/horse-two.jpg');
+        background-size: cover;
     }
 
     
@@ -808,7 +1017,12 @@ html,body{
 .video-two{
     width: 94%;
     height: 450px;
-    background: #D9D9D9;
+}
+
+.video-two > video{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
 .sub-one-three{
@@ -935,7 +1149,35 @@ html,body{
 .card-one{
     width: 320px;
     height: 323px;
-    background: #BC7373;
+    background: url('./assets/horse-begineer.jpg');
+    background-size: cover;
+    position: relative;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.card-two{
+    background: url('./assets/kitty-party.jpg');
+    background-size: cover;
+    width: 320px;
+    height: 323px;
+    position: relative;
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.card-three{
+    background: url('./assets/pre-wedding.jpg');
+    background-size: cover;
+    background-position: end;
+    width: 320px;
+    height: 323px;
     position: relative;
     margin-top: 9em;
     display: flex;
@@ -945,9 +1187,7 @@ html,body{
 }
 
 
-
 .sub-card-one{
-    background: #D9D9D9;
     position: absolute;
     bottom: -6em;
     width: 90%;
@@ -1023,7 +1263,8 @@ html,body{
 .pic-one-five{
     width: 80%;
     height: 450px;
-    background-color:#555 ;
+    background:url('./assets/forestcountry.jpg') ;
+    background-size: cover;
     margin: 3em auto -13em;
 }
 
@@ -1073,9 +1314,11 @@ html,body{
 }
 
 .review-pic{
+    background: url('./assets/pics/pic-one.jpg');
+    background-size: cover;
+    background-position: center;
     width: 75px;
     height: 75px;
-    background: #D9D9D9;
     margin-bottom: 1.5em;
     margin-right: 1em;
 }
@@ -1117,9 +1360,25 @@ html,body{
 }
 
 .pic-one-location{
-    width: 90%;
-    height: 500px;
-    background: #D9D9D9;
+    border-radius: 1.25em;
+    border: 2px solid #232323;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 95%;
+    margin: 0 auto;
+    height: 500px; 
+    margin-top: 0em;
+    overflow: hidden;
+}
+
+.pic-one-location > video{
+    min-width: 100%; 
+    min-height: 100%; 
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%,-30%);
 }
 
 .sub-location-two > h2{
@@ -1144,7 +1403,8 @@ html,body{
 .pic-two-location{
     width: 85%;
     height: 450px;
-    background: #D9D9D9;
+    background: url('./assets/logo.png');
+    background-size: cover;
 }
 
 
@@ -1165,6 +1425,11 @@ html,body{
     cursor: pointer;
     margin-top: 0.5em;
     margin-bottom: 3.5em;
+}
+
+.sub-location-two > button > a{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* FOOTER STYLING */
@@ -1261,7 +1526,31 @@ html,body{
 .sultan{
     width: 35%;
     height: 100px;
-    background: #D9D9D9;
+    background: url('./assets/horse-one.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sultan-two{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/horse-two.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sultan-three{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/horse-begineer.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+.sultan-four{
+    width: 35%;
+    height: 100px;
+    background: url('./assets/forestcountry.jpg');
+    background-size: cover;
     border-radius: 10px;
 }
 
@@ -1295,6 +1584,11 @@ html,body{
 
     .video-two{
         width: 100%;
+    }
+
+    .video-two > video{
+        width: 100%;
+        object-fit: cover;
     }
 
 

@@ -10,12 +10,28 @@
     <header>
         <div class="container">
             <div class="header">
-                <!-- <img src="./assets/logo.png" alt="logo of club" class="logo"> -->
+                <div class="left">
+                    <button><a href="tel:9560450680">CONTACT</a></button>
+                </div>
                 <h1>THE FOREST COUNTRY RIDING CLUB</h1>
                 <div class="sub--header">
-                    <button class="menu--btn"></button>
+                    <button class="menu--btn" id="hamburger"></button>
                 </div>
-                
+                <nav class="right">
+                    <ul>
+                        <li><a onclick="scrollFunctionTwo()">About</a></li>
+                        <li><a onclick="scrollFunctionThree()">Services</a></li>
+                        <li><a onclick="scrollFunctionFour()">Location</a></li>
+                    </ul>
+                </nav>
+                <div class="sub-header-two">
+                    <ul class="hamburger-list" id="list">
+                        <li><a onclick="scrollFunctionOne()">Home</a></li>
+                        <li><a onclick="scrollFunctionTwo()">About</a></li>
+                        <li><a onclick="scrollFunctionThree()">Services</a></li>
+                        <li><a onclick="scrollFunctionFour()">Location</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -31,7 +47,7 @@
                 <div class="video--one"></div>
                 <div class="rec">
                     <div class="rec-gif"></div>
-                    <h2>
+                    <h2 id="home">
                         Recording
                     </h2>
                 </div>
@@ -45,11 +61,11 @@
             <div class="section-two">
                 <div class="pic-one"></div>
                 <div class="sub-one-two">
-                    <h1>Perfect Place for Horse Riding in Delhi NCR</h1>
+                    <h1 id="aboutMe">Perfect Place for Horse Riding in Delhi NCR</h1>
                     <h2>
                         Trusted for over a decade, our horse riding club boasts a thriving community of 1000+ happy clients. 
                     </h2>
-                    <button>About Us</button>
+                    <button><a href="tel:7834996556">About Us</a></button>
                     <div class="pic-two"></div>
                 </div>
             </div>
@@ -77,7 +93,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="video-two"></div>
+                <div class="video-two">
+                    <video loop autoplay  class="video-two">
+                        <source src="./assets/horse-running.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
     </section>
@@ -87,7 +107,7 @@
             <div class="section-four">
                 <div class="fourth-section">
                     <h1>What We Offer</h1>
-                    <div class="sub-section-four">
+                    <div class="sub-section-four" id="services">
                         <h2>
                             More than a destination, it's an immersive experience celebrating the profound connection between humans and horses.
                             Amidst tranquil beauty, discover the art of trust, the language of understanding, and the joy of shared journeys
@@ -108,9 +128,9 @@
                         </div>
                     </div>
 
-                    <div class="card-one">
+                    <div class="card-two">
                         <div class="sub-card-one">
-                            <h1>Contest Training</h1>
+                            <h1>Kitty Party</h1>
                             <h2>
                                 Here, amidst the tranquil beauty of the equestrian world,
                                 you'll discover the art of trust, the language of understanding,
@@ -118,12 +138,12 @@
                         </div>
                     </div>
 
-                    <div class="card-one">
+                    <div class="card-three">
                         <div class="sub-card-one">
-                            <h1>Hippotherapy</h1>
+                            <h1 class="third-card">Pre Wedding PhotoShoot</h1>
                             <h2>
-                                Here, amidst the tranquil beauty of the equestrian world,
-                                you'll discover the art of trust, the language of understanding,
+                                Here, amidst the tranquil beauty where
+                                you'll discover the art of trust, the language of understanding.
                             </h2>
                         </div>
                     </div>
@@ -162,7 +182,7 @@
             <div class="section-six">
                 <div class="carousel">
                     <h1>
-                        I recently had the pleasure of visiting the Horse Riding 128, and I can't express enough how truly delightful the experience was.
+                        I recently had the pleasure of visiting The Forest Countr Riding Club, and I can't express enough how truly delightful the experience was.
                         As an avid horse enthusiast, I've visited several equestrian establishments, but this one stood out for several compelling reasons.
                     </h1>
     
@@ -180,15 +200,17 @@
         <div class="container">
             <div class="location">
                 <div class="sub-location">
-                    <div class="pic-one-location"></div>
-                    <h1>Location</h1>
+                    <div class="pic-one-location">
+                        <video src="./assets/forest-video.mp4" autoplay loop></video>
+                    </div>
+                    <h1 id="location">Location</h1>
                 </div>
                 <div class="sub-location-two">
                     <h2>Experience the nature!!</h2>
                     <h3>
                         Besides Concrete Mixing Plant, Pusta Road Near vill-Nagla-Nagli, Noida, Uttar Pradesh 201301
                     </h3>
-                    <button>Maps</button>
+                    <button><a href="https://www.google.com/maps/dir//Besides+Concrete+Mixing+Plant,+Pusta+Road+Near+vill-Nagla-Nagli,+Noida,+Uttar+Pradesh+201301/@28.4959094,77.2988156,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce88e6252b63f:0x3daa43f213bb858e!2m2!1d77.3812088!2d28.49593?entry=ttu">Maps</a></button>
                     <div class="pic-two-location"></div>
                 </div>
             </div>
@@ -200,25 +222,25 @@
             <div class="footer">
                 <div class="footer-one">
                     <div class="sub--footer--one">
-                        <h1>HORSE RIDING CLUB</h1>
+                        <h1>FOREST COUNTRY CLUB</h1>
                         <h2>Today, horse riding is primarily enjoyed as a recreational activity and sport.</h2>
                     </div>
                     
                     <div class="sub--footer--two">
                         <ul>
-                            <li><a onclick="">About</a></li>
-                            <li><a onclick="">Services</a></li>
-                            <li><a onclick="">Location</a></li>
-                            <li><a onclick="">Contact </a></li>
+                            <li><a onclick="scrollFunctionOne()">Home</a></li>
+                        <li><a onclick="scrollFunctionTwo()">About</a></li>
+                        <li><a onclick="scrollFunctionThree()">Services</a></li>
+                        <li><a onclick="scrollFunctionFour()">Location</a></li>
                         </ul>
                     </div>
                     <div class="sub--footer--three">
                         <h1>Our Horses</h1>
                         <div class="horses--box">
                             <div class="sultan"></div>
-                            <div class="sultan"></div>
-                            <div class="sultan"></div>
-                            <div class="sultan"></div>
+                            <div class="sultan-two"></div>
+                            <div class="sultan-three"></div>
+                            <div class="sultan-four"></div>
                         </div>
                     </div>
                 </div>
@@ -231,5 +253,6 @@
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
