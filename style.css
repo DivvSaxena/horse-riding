@@ -288,16 +288,11 @@ html,body{
 }
 
 .video-two{
-    width: 316px;
-    height: 450px;
-}
-
-.video-two > video{
     width: 100%;
     height: 450px;
     object-fit: cover;
+    margin-bottom: -1em;
 }
-
 .sub-one-three{
     margin-top: 0.5em;
 }
@@ -1599,10 +1594,6 @@ html,body{
     }
 
     .video-two{
-        width: 100%;
-    }
-
-    .video-two > video{
         width: 100%;
         object-fit: cover;
     }
