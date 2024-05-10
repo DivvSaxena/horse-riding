@@ -366,6 +366,7 @@ html,body{
     z-index: -10;
     color: #fff;
     padding-top: 17em;
+    margin-bottom: -18em;
 }
 
 .fourth-section > h1{
@@ -459,7 +460,7 @@ html,body{
 
 .section-five{
     position: relative;
-    top: -17em;
+    top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -467,6 +468,7 @@ html,body{
     text-align: center;
     margin: 1em auto 1em auto;
     padding: 1em;
+    padding-bottom: 17em;
 }
 
 .section-five > h3{
@@ -1119,6 +1121,7 @@ html,body{
     color: #fff;
     line-height: 1.7;
     padding-top: 17em;
+    margin-bottom: -17em;
 }
 
 .fourth-section{
@@ -1223,7 +1226,8 @@ html,body{
 
 .section-five{
     position: relative;
-    top: -17em;
+    top: 1em;
+    z-index: 40;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1231,6 +1235,8 @@ html,body{
     text-align: center;
     margin: 1em auto 1em auto;
     padding: 1em;
+    padding-bottom: 25em;
+    padding-top: 5em;
 }
 
 .section-five > h3{
