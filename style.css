@@ -789,6 +789,13 @@ html,body{
 
 /* MEDIA QUERIES */
 
+
+@media (min-width:390px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
 @media (min-width:424px) {
     .container{
         max-width: 100%;
