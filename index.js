@@ -4,6 +4,7 @@ const homeEl = document.getElementById('home')
 const aboutMeEl = document.getElementById('aboutMe')
 const servicesEl = document.getElementById('services')
 const locationEl = document.getElementById('location')
+const trainerEl = document.getElementById('trainer')
 
 let click = true
 
@@ -56,6 +57,16 @@ function scrollFunctionThree(){
 
 function scrollFunctionFour(){
     locationEl.scrollIntoView({
+        block:'start',
+        behavior:'smooth',
+        inline:'start'
+    })
+    notRenderHamburger()
+}
+
+
+function scrollFunctionStaff(){
+    trainerEl.scrollIntoView({
         block:'start',
         behavior:'smooth',
         inline:'start'

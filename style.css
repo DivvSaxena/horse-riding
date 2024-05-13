@@ -60,7 +60,7 @@ html,body{
     width: 70%;
     font-family: Satoshi-Light;
     text-align: center;
-    font-weight: 100;
+    font-weight: 900;
     margin-top: 1.75em;
     margin-bottom: 1.75em;
 }
@@ -175,14 +175,24 @@ html,body{
     background-color: #888;
     margin: 0 auto;
     border-radius: 48%;
-    background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3IwbWt0YnR1aTdqeDI4aTZjNWh4dHNpemtxMmRndnpjaXVuNXhjMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1cEop0192fG2k/giphy.gif");
-    background-size: cover;
-    background-position: center;
     margin-top: -2.95em;
     position: relative;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
     margin-bottom: 1em;
     z-index: 1;
 }
+
+.video--one > video{
+    min-width: 100%; 
+    min-height: 100%; 
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-30%,-30%);
+}
+
 
 .section-one > h2{
     text-align: right;
@@ -560,6 +570,78 @@ html,body{
     height: 88px;
     margin-bottom: 1.5em;
 }
+
+/* STAFF STYLING */
+
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    text-align: center;
+}
+
+.staff > h1{
+    font-family: Satoshi-Regular;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.staff-pic{
+    background: url('./assets/staff/head_coach.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 333px;
+    height: 323px;
+    margin: 0 auto;
+}
+
+.staff-pic-two{
+    background: url('./assets/staff/assistant-one.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 333px;
+    height: 323px;
+    margin: 0 auto;
+}
+
+.staff-pic-three{
+    background: url('./assets/staff/assistant-two.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 333px;
+    height: 323px;
+    margin: 0 auto;
+}
+
+.staff-pic-four{
+    background: url('./assets/staff/assistant-thre.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 333px;
+    height: 323px;
+    margin: 0 auto;
+}
+
+.staff-pic-five{
+    background: url('./assets/staff/assistant-four.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 333px;
+    height: 323px;
+    margin: 0 auto;
+}
+
+.staff-one > h2{
+    font-family: Satoshi-Regular;
+    color: #fff;
+}
+
 
 
 /* LOCATION STYLING */
@@ -1054,6 +1136,17 @@ html,body{
     object-fit: cover;
 }
 
+
+.video--one > video{
+    min-width: 100%; 
+    min-height: 100%; 
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%,-30%);
+}
+
+
 .sub-one-three{
     margin-top: 0.5em;
     width: 60%;
@@ -1356,6 +1449,21 @@ html,body{
     margin-right: 1em;
 }
 
+    /* TRAINERS */
+
+    .staff{
+        margin: 0em 0 2em 0;
+    }
+
+    .coaches{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 90%;
+    }
+
 
 /* LOCATION STYLING */
 .location{
@@ -1434,10 +1542,12 @@ html,body{
 }
 
 .pic-two-location{
+    height: 150px;
     width: 85%;
-    height: 450px;
     background: url('./assets/logo.png');
+    background-position: center;
     background-size: cover;
+    object-fit: cover;
 }
 
 
